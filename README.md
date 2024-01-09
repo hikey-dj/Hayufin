@@ -17,6 +17,9 @@ Start the backend and run the react development server in the front to view the 
 
 
 Future Developments:
+
   Getting data from nse website instead of using Shoonya-Api.
+  
   Providing an option for users to change the value of the derivative they are going to buy/sell.
+  
   Updating the graph to have a vertical and horizontal trace from the point where the cursor is placed.
