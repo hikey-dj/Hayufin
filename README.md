@@ -6,6 +6,7 @@ It uses realtime data, which is obtained from the broker Shoonya (Finvisia)
 The project has still more features to be added, and subsequent versions will be uploaded
 
 --------------------------TO SEE THE PROJECT-----------------------
+
 Clone the repository, in the front folder run npm install to install all the dependencies
 In backend make a new folder called dependencies, in there clone this repository "https://github.com/Shoonya-Dev/ShoonyaApi-js/tree/master"
 Get your credentials **from the broker Shoonya** to get real-time data from them.
