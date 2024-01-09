@@ -34,7 +34,7 @@ Start the backend and run the React development server in the front to view the 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/hikey-dj/Hayufin.git
     ```
 
 2. Install front-end dependencies:
