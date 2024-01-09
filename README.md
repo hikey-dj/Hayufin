@@ -16,7 +16,7 @@ Start the backend and run the react development server in the front to view the 
 --------------------------------------------------------------------
 
 
-Future Developments:
+**Future Developments:**
 
   Getting data from nse website instead of using Shoonya-Api.
   
