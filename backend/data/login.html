@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      margin-bottom: 16px; /* Adjust margin between form and div */
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 30px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <!-- Div added at the bottom -->
+    <div class="result" id="result"></div>
+    </div>
+
+  <script>
+    function submitForm() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Assuming your server is running on http://localhost:3000
+      const url = 'http://localhost:3000/login'; // Change this URL accordingly
+
+      const data = {
+        username: username,
+        password: password
+      };
+
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.status) {
+            window.location.href = '/home'; 
+        } else {
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = 'Login Failed try again';
+        }        
+      })
+      .catch(error => {
+        const resultDiv = document.getElementById('result');
+        resultDiv.textContent = 'Server side Error!!';
+      });
+    }
+  </script>
+
+</body>
+</html>

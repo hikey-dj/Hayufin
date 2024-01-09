@@ -1,0 +1,357 @@
+.master_login {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginForm {
+  margin-bottom: 16px; /* Adjust margin between form and div */
+}
+
+.fp_label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.fp_error {
+  color: red;
+}
+
+.fp_input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.fp_submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 30px;
+  color: red;
+}
+/*Dropdown*/
+.drop {
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.dropdown--text{
+  color: #616161;
+  font-size: 13px;
+  letter-spacing: 0.2px;  
+  font-weight: 500;
+}
+
+
+/*HOME*/
+
+.home {
+  background-color: rgb(244, 244, 244);
+  min-height: 100vh;
+}
+
+.sticky-navbar {
+  transition-duration: 800ms;
+  display: flex;
+  color: white;
+  position: fixed;
+  width:99%;
+  top: 0;
+  background-color: #2657de;
+  padding: 0.5%;
+  z-index: 1000;
+  box-shadow: #ccc;
+}
+
+.navbar {
+  position: fixed;
+  width:97.5%;
+  top: 0;  
+  transition-duration: 500ms;
+  display: flex;
+  color: white;
+  background-color: #11c5bf;
+  padding: 1.25%;
+  z-index: 1000;
+  box-shadow: #ccc;  
+}
+
+.nav1{
+  margin-right:auto;
+  margin-left: 20px;
+  align-items: center;  
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.userName{
+  margin-top: 7px;
+  margin-bottom: 0px;
+  margin-right: 30px;  
+  font-weight: 600;
+}
+
+.top {
+  background-color: rgb(244, 244, 244);
+  width: 97.5%;
+  height: 80px;
+  padding:1.25%;  
+}
+
+.selector {
+  max-width: 86%;
+  background-color: white;
+  margin-left: 4%;
+  padding:2%;
+  border-radius: 20px;
+}
+
+.radio-dot {
+  width: 15px;
+  height: 15px;
+}
+
+.radio-label {
+  display: flex;
+  margin-right: 10px;
+}
+
+.counter{
+  display: flex;
+  width: fit-content;
+  border: grey solid 2px;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.counterLabel {
+  margin-top: 25px;
+}
+
+.counterM {
+  text-align: center;
+  align-items: center;
+  font-size: 20px;  
+  padding:2px 5px 10px 5px;
+  height:20px;
+  width: 20px;
+  border-right: grey solid 2px;
+}
+
+.counterP {
+  text-align: center; 
+  align-items: center;  
+  font-size: 20px;  
+  padding:2px 5px 10px 5px;
+  height:20px;
+  width: 20px;  
+  border-left: grey solid 2px;  
+}
+
+.counterM,.counterP:hover {
+  cursor: pointer;
+}
+
+.counterValue:focus{
+  outline-style: none;
+}
+
+.counterValue{
+  text-align: center;
+  font-size: 16px;
+  max-width: 50px;
+  padding: 5px;
+  border: 0px !important;
+}
+
+.submitText{
+  color: white;
+  background-color: #2657de;
+  padding:8px 15px 8px 15px;
+  margin-right: 10px;
+  max-width: fit-content;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.submitText:hover{
+  background-color:  #476eda ;
+  cursor: pointer;
+}
+
+/*Option Chain*/
+
+.chain{
+  text-align: center;
+  max-width: 86%;
+  background-color: white;
+  margin-left: 4%;
+  padding-left:2%;
+  padding-right:2%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  margin-top:10px;
+  height:fit-content;
+}
+
+.chainTitle {
+  font-size: 20px;
+  font-weight: bold;
+  display: grid;
+  grid-auto-flow: column;  
+}
+
+.expiry-flex{
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+}
+
+.chainHeader{
+  margin-top: 40px;
+  margin-left: 4%;
+  margin-right: 4%;
+  display:flex;
+  font-weight: bold;
+  font-size: 18px;
+  justify-content: space-between;
+
+}
+
+.chainPeek{
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+}
+
+.chainHide{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.chainElements{
+  padding-top: 5px;
+  padding-left: 5%;
+  padding-right: 5%;  
+  display:flex;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  font-weight: 500;
+}
+
+.chainPut{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  justify-self: left;
+  color:rgb(49, 163, 255);
+  width: fit-content;
+  min-width: 150px;
+}
+
+.chainStrike{
+  justify-self: center;
+  width: fit-content;
+}
+
+.chainCall{
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  min-width: 150px;
+  justify-self: right;
+  color:#ffc130;
+  width: fit-content;
+}
+
+.chainBuySell{
+  visibility: hidden;
+  display: flex;
+}
+
+.chainBuy{
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 2px 7px 3px 7px;
+  background-color: #4ada4e;
+  color: white;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.chainSell{
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 2px 7px 3px 7px;
+  background-color: #e82626;
+  color: white;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.chainBuy:hover {
+  cursor: pointer;
+}
+
+.chainSell:hover {
+  cursor: pointer;
+}
+
+.chainPut:hover  .chainBuySell{
+  visibility: visible;
+}
+
+.chainCall:hover  .chainBuySell{
+  visibility: visible;
+}
+
+/* Graph */
+
+.graph{
+  text-align: center;
+  width: 86%;
+  background-color: white;
+  margin-left: 4%;
+  padding-left:2%;
+  padding-right:2%;
+  border-radius: 20px;
+  margin-top:10px;
+  min-height:400px;
+  display: flex;
+}
+
+.graphList{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.deleteIcon:hover {
+  color: red;
+}
+
+.dummy{
+  color: #f1e77579;
+}
