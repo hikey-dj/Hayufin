@@ -1,25 +1,78 @@
-Strategy bulider for derivatives
+# Derivatives Payoff Chart Project
 
-The project currently plots the payoff chart when provided with derivatives that are bought and sold.
-It uses realtime data, which is obtained from the broker Shoonya (Finvisia)
+## Overview
 
-The project has still more features to be added, and subsequent versions will be uploaded
+The Derivatives Payoff Chart Project allows users to visualize the payoff chart based on derivatives bought and sold. Real-time data is obtained from the Shoonya broker (Finvisia) using the ShoonyaApi-js.
 
---------------------------TO SEE THE PROJECT-----------------------
+**To see the project:**
+- Clone the repository.
+- In the "front" folder, run `npm install` to install all dependencies.
+- Create a new folder called "dependencies" in the "backend" directory.
+- Clone the ShoonyaApi-js repository into the "dependencies" folder (`https://github.com/Shoonya-Dev/ShoonyaApi-js/tree/master`).
+- Obtain your credentials **from the broker Shoonya** for real-time data.
+- Update your credentials in the "cred.js" file within the "functions" folder.
 
-Clone the repository, in the front folder run npm install to install all the dependencies
-In backend make a new folder called dependencies, in there clone this repository "https://github.com/Shoonya-Dev/ShoonyaApi-js/tree/master"
-Get your credentials **from the broker Shoonya** to get real-time data from them.
-In the functions folder update your credentials in the cred.js folder.
+Start the backend and run the React development server in the front to view the project.
 
-Start the backend and run the react development server in the front to view the project
---------------------------------------------------------------------
+---
 
+## Future Developments:
 
-**Future Developments:**
+- **Data Source Enhancement:**
+  - Replace Shoonya-Api with data from the NSE website for improved data sourcing.
 
-  Getting data from nse website instead of using Shoonya-Api.
-  
-  Providing an option for users to change the value of the derivative they are going to buy/sell.
-  
-  Updating the graph to have a vertical and horizontal trace from the point where the cursor is placed.
+- **User Flexibility:**
+  - Provide an option for users to dynamically change the value of the derivatives they are going to buy/sell.
+
+- **Graph Enhancements:**
+  - Update the graph to include a vertical and horizontal trace from the cursor's position, improving chart readability.
+
+---
+
+## Instructions
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/your-repo.git
+    ```
+
+2. Install front-end dependencies:
+
+    ```bash
+    cd front
+    npm install
+    ```
+
+3. Set up backend dependencies:
+
+    ```bash
+    cd backend
+    mkdir dependencies
+    cd dependencies
+    git clone https://github.com/Shoonya-Dev/ShoonyaApi-js/tree/master
+    ```
+
+4. Update credentials:
+
+    - Obtain credentials from Shoonya and update them in `functions/cred.js`.
+
+5. Start the project:
+
+    - Start the backend.
+    
+    ```bash
+    # In the backend folder
+    node fetch.js
+    ```
+
+    - Run the React development server in the front.
+
+    ```bash
+    # In the front folder
+    npm start
+    ```
+
+---
+
+Feel free to contribute and stay tuned for future updates!
