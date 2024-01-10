@@ -50,7 +50,7 @@ Start the backend and run the React development server in the front to view the 
     cd backend
     mkdir dependencies
     cd dependencies
-    git clone https://github.com/Shoonya-Dev/ShoonyaApi-js/tree/master
+    git clone https://github.com/hikey-dj/ShoonyaApi-js.git
     ```
 
 4. Update credentials:
